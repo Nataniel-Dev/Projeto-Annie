@@ -15,8 +15,8 @@
 
       <div class="paragrafo">
         <p>Perigosa, mas adoravelmente precoce
-          Annie é uma pequena maga com imenso poder piromaníaco. <br>Mesmo isolada nas sombras das montanhas ao norte de Noxus, ela causa estranhamento com sua magia.
-          <br> Sua afinidade natural com o fogo já era evidente desde a...
+          Annie é uma pequena maga com imenso poder piromaníaco. Mesmo isolada nas sombras das montanhas ao norte de Noxus, ela causa estranhamento com sua magia.
+          Sua afinidade natural com o fogo já era evidente desde a...
         </p>
       </div>
     </div>
@@ -28,33 +28,59 @@
 
   <div class="container3">
     <div class="habilidades">
-      <div class="individual">
-        <div class="qd"></div>
+
+      <div class="individual ativa">
+        <button onclick="mudarIframe('passiva.html')">
+          <div class="qd anniep"></div>
+        </button>
         <div class="nomehab">PIROMANIA</div>
       </div>
 
       <div class="individual">
-        <div class="qd"></div>
+        <button onclick="mudarIframe('habilidadeq.html')">
+          <div class="qd annieq"></div>
+        </button>
         <div class="nomehab">DESINTEGRAR</div>
       </div>
 
       <div class="individual">
-        <div class="qd"></div>
+        <button onclick="mudarIframe('habilidadew.html')">
+          <div class="qd anniew"></div>
+        </button>
         <div class="nomehab">INCINERAR</div>
       </div>
 
       <div class="individual">
-        <div class="qd"></div>
+        <button onclick="mudarIframe('habilidadee.html')">
+          <div class="qd anniee"></div>
+        </button>
         <div class="nomehab">ESCUDO FUNDIDO</div>
       </div>
 
       <div class="individual">
-        <div class="qd"></div>
+        <button onclick="mudarIframe('habilidader.html')">
+          <div class="qd annier"></div>
+        </button>
         <div class="nomehab">INVOCAR:TIBBERS</div>
       </div>
 
     </div>
   </div>
 
+  <div class="container4">
+    <div class="iframe_container">
+      <iframe id='iframe'src="" frameborder="0" width="500px" height="380px" scrolling="no"></iframe>
+    </div>
+  </div>
+
+  <div class="container5">
+    <div class="historia">HISTORIA</div>
+  </div>
+  <script>
+    function mudarIframe(pagina){
+          document.getElementById('iframe').src = pagina;
+        
+    }
+  </script>
 </body>
 </html>

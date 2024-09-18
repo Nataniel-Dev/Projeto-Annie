@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+
+        }
+        .passiva{
+            width: 550px;
+            height: 350px;
+
+        }
+
+        .container_passiva{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .descricao{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+        }
+        .container_video{
+            display: flex;
+            justify-content: center;
+ 
+        }
+        video{
+            width: 510px;
+            height: 350px;
+        }
+        h1,h2{
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        h1{
+            color: rgb(233, 125, 125);
+        }
+
+        h2{
+            color: #999999;
+        }
+
+        p{
+            color: white;
+            font-size: 1.2em;
+        }
+
+        @media(max-width:800px){
+            .container_passiva{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container_passiva">
+        <div class="descricao">
+            <h1>ESCUDO FUNDIDO</h1>
+            <h2>E</h2>
+            <p>Annie concede um Escudo e um impulso de Velocidade de Movimento a si ou a um aliado, causando dano a inimigos que a atingirem com Ataques ou Habilidades..</p>
+        </div>
+
+        <div class="container_video">
+            <video autoplay loop muted>
+                <source src="videos/ability_0001_E1.mp4">
+            </video>
+        </div>
+    </div>
+
+   
+</body>
+</html>
